@@ -1,11 +1,11 @@
-[![Build Status](https://dev.azure.com/simplify9/Github%20Pipelines/_apis/build/status/simplify9.ExportToExcel?branchName=master)](https://dev.azure.com/simplify9/Github%20Pipelines/_build/latest?definitionId=168&branchName=master) 
 
-![Azure DevOps tests](https://img.shields.io/azure-devops/tests/Simplify9/Github%20Pipelines/168?style=for-the-badge)
-
+[![GitHub Actions](https://github.com/simplify9/SW-ExportToExcel/actions/workflows/nuget-publish.yml/badge.svg)](https://github.com/simplify9/SW-ExportToExcel/actions/workflows/nuget-publish.yml)
+[![NuGet](https://img.shields.io/nuget/v/SimplyWorks.ExportToExcel?style=for-the-badge)](https://www.nuget.org/packages/SimplyWorks.ExportToExcel/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
 | **Package**       | **Version** |
 | :----------------:|:----------------------:|
-|```SimplyWorks.ExportToExcel```| ![Nuget](https://img.shields.io/nuget/v/SimplyWorks.ExportToExcel?style=for-the-badge)
+| SimplyWorks.ExportToExcel | [![NuGet](https://img.shields.io/nuget/v/SimplyWorks.ExportToExcel?style=for-the-badge)](https://www.nuget.org/packages/SimplyWorks.ExportToExcel/) |
 
 
 
