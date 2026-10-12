@@ -1,21 +1,36 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-  <TargetFramework>net8.0</TargetFramework>
-  <PackageId>SimplyWorks.ExportToExcel</PackageId>
-  <Product>SimplyWorks.ExportToExcel</Product>
-  <Authors>Simplify9</Authors>
-  <PackageLicenseExpression>MIT</PackageLicenseExpression>
-  <PackageIcon>icon.png</PackageIcon>
-  <Description>ExportToExcel provides IEnumerable extensions for exporting data to Excel using OpenXML. For full documentation, visit https://github.com/simplify9/SW-ExportToExcel</Description>
+    <TargetFrameworks>net10.0;net8.0</TargetFrameworks>
+    <LangVersion>latest</LangVersion>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+    <PackageId>SimplyWorks.ExportToExcel</PackageId>
+    <Product>SimplyWorks.ExportToExcel</Product>
+    <Authors>Simplify9</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/simplify9/SW-ExportToExcel</RepositoryUrl>
+    <Description>ExportToExcel provides IEnumerable extensions for exporting data to Excel (.xlsx), streamed row by row. For full documentation, visit https://github.com/simplify9/SW-ExportToExcel</Description>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="DocumentFormat.OpenXml" Version="2.13.1" />
+    <!-- Not used by the library any more (it writes the package itself), but kept: consumers rely on
+         getting DocumentFormat.OpenXml through this package and stop compiling without it. -->
+    <PackageReference Include="DocumentFormat.OpenXml" Version="3.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="SW.ExportToExcel.UnitTests" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="..\icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\README.md">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
